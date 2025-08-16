@@ -54,3 +54,104 @@
 
 </body>
 </html>
+
+/* -----------------------------
+   Reset & Default Styling
+----------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* -----------------------------
+   Body Styling
+----------------------------- */
+body {
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* -----------------------------
+   Calculator Container
+----------------------------- */
+.calculator {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  gap: 10px;
+}
+
+/* -----------------------------
+   Display Styling
+----------------------------- */
+.output {
+  grid-column: span 4;
+  background-color: #000;
+  color: #fff;
+  padding: 15px;
+  font-size: 2rem;
+  border-radius: 10px;
+  text-align: right;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+/* -----------------------------
+   Buttons General Styling
+----------------------------- */
+button {
+  padding: 20px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Number Buttons */
+button.number {
+  background-color: #444;
+  color: white;
+}
+
+/* Operation Buttons (+, -, *, /) */
+button.operation {
+  background-color: #f39c12;
+  color: white;
+}
+
+/* Clear Button (AC) */
+button.clear {
+  background-color: #e74c3c;
+  color: white;
+}
+
+/* Delete Button (DEL) */
+button.delete {
+  background-color: #c0392b;
+  color: white;
+}
+
+/* Equal Button (=) */
+button.equal {
+  background-color: #27ae60;
+  color: white;
+}
+
+/* Hover Effect */
+button:hover {
+  filter: brightness(1.2);
+}
+
+/* Span 2 (Wide Buttons like AC, =) */
+.span-2 {
+  grid-column: span 2;
+}
+
