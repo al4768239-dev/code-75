@@ -1,0 +1,85 @@
+/* Body background color সেট করা */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightblue; /* তুমি যেকোনো রঙ দিতে পারো */
+}
+
+/* Container & box styling */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.appy-box {
+  max-width: 600px;
+  padding: 20px;
+  background-color: white;
+  margin: 50px auto; /* একসাথে center + top margin */
+  font-size: 20px;
+  box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+  border-radius: 10px;
+}
+
+.title-small {
+  font-size: 20px;
+}
+
+.form-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+input:focus, 
+select:focus, 
+textarea:focus {
+  outline-color: red;
+}
+
+/* Button Styling */
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  background-color: #ff0000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  position: relative; /* Ensure proper positioning */
+  z-index: 1; /* Bring button above other elements */
+}
+
+button:hover {
+  background-color: #ccc;
+  border: 2px solid red;
+  color: black;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
