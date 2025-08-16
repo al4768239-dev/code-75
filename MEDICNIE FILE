@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Happy Squad</title>
+  <link rel="stylesheet" href="/html_tuorial/file_path/css_folder/style.css">
+</head>
+<body>
+  <section class="container">
+    <h1><span class="highlight">Discover</span> The <br />Happy Squad</h1>
+    <p class="description">
+      Meet the Happy Squad: our vibrant, kid-friendly characters who make taking vitamins fun and exciting!
+    </p>
+
+
+    <div class="card-grid">
+      <div class="card purple">
+        <img src="/html_tuorial/file_path/img_folder/img_folder/blue.png" alt="Vitamin A" />
+        <h2>A</h2>
+        <p>Purple Berry</p>
+        <button>🛒</button>
+      </div>
+      <div class="card blue">
+        <img src="/html_tuorial/file_path/img_folder/img_folder/vitamen.png" alt="Vitamin B" />
+        <h2>B</h2>
+        <p>Berry Burst</p>
+        <button>🛒</button>
+      </div>
+      <div class="card orange">
+        <img src="/html_tuorial/file_path/img_folder/img_folder/apple.png" alt="Vitamin C" />
+        <h2>C</h2>
+        <p>Cherry Zing</p>
+        <button>🛒</button>
+      </div>
+      <div class="card green">
+        <img src="/html_tuorial/file_path/img_folder/img_folder/while.png" alt="Vitamin D" />
+        <h2>D</h2>
+        <p>Lime Splash</p>
+        <button>🛒</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* css_folder/style.css */
+
+
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fef9f4;
+  color: #333;
+}
+
+
+.container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+
+.highlight {
+  color: #ff69b4;
+}
+
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #666;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+
+.card img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
+.card h2 {
+  font-size: 2rem;
+  margin: 10px 0 5px;
+}
+
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+
+/* Color Themes */
+.card.purple {
+  background: #e9d6f6;
+}
+
+
+.card.blue {
+  background: #d6ecf6;
+}
+
+
+.card.orange {
+  background: #fce0b3;
+}
+
+
+.card.green {
+  background: #d6f6d2;
+}
+
+
+button {
+  font-size: 1.5rem;
+  padding: 8px 16px;
+  border: none;
+  background: #ff69b4;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+
+button:hover {
+  background: #ff1493;
+}
+
+
