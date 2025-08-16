@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Information -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A.P.J. Abdul Kalam Tribute</title>
+  <!-- Link to External CSS -->
+  <link rel="stylesheet" href="/html_tuorial/file_path/css_folder/style.css">
+</head>
+<body>
+  <!-- Main Container for Tribute Page -->
+  <div class="container">
+    <!-- Tribute Card Content -->
+    <div class="card">
+      <!-- Profile Image -->
+      <img src="/html_tuorial/file_path/img_folder/img_folder/images/abuk.jpg" alt="Kalam">
+      <!-- Name and Lifespan -->
+      <h1>A.P.J. ABDUL KALAM</h1>
+      <p class="year">1931-2015</p>
+
+      <!-- Title/Designation -->
+      <h2>Missile Man of India</h2>
+      <!-- Biography Section -->
+      <p class="about">
+        Avul Pakir Jainulabdeen Abdul Kalam was an Indian aerospace scientist who served as the 11th president of
+        India from 2002 to 2007. He was born and raised in Rameswaram, Tamil Nadu and studied physics and aerospace engineering.
+        He spent the next four decades as a scientist and science administrator at the Defence Research and Development Organisation
+        (DRDO) and Indian Space Research Organisation (ISRO).
+      </p>
+
+      <!-- List of Biographies -->
+      <h3>Biographies</h3>
+      <ul>
+        <li>Eternal Quest: Life and Times of Dr Kalam by S Chandra, Pentagon Publishers, 2002.</li>
+        <li>President A. P. J Abdul Kalam by R K Pruthi, Anmol Publications, 2002.</li>
+        <li>Wings of Fire: An Autobiography by A. P. J Abdul Kalam.</li>
+        <li>Ignited Minds: Unleashing the Power Within India by A. P. J Abdul Kalam, 2002.</li>
+      </ul>
+
+      <!-- Wikipedia Link -->
+      <p class="wiki-link">
+        Read more about A. P. J. Abdul Kalam on
+        <a href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam" target="_blank">Wikipedia</a>.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling for overall layout and typography */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e9e9f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main container for the tribute card */
+.container {
+  width: 90%;
+  max-width: 800px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Center content within the card */
+.card {
+  text-align: center;
+}
+
+/* Profile image styling */
+.card img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* Heading styles for name, title, and section headers */
+h1 {
+  font-size: 32px;
+  color: #1d1e4c;
+  margin-bottom: 5px;
+}
+
+/* Lifespan text styling */
+.year {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Title (Missile Man of India) styling */
+h2 {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Biography paragraph styling */
+.about {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Subheading for biographies section */
+h3 {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #1d1e4c;
+}
+
+/* List styling for biography entries */
+ul {
+  text-align: left;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* Individual list item styling */
+ul li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #444;
+}
+
+/* Wikipedia link container styling */
+.wiki-link {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Wikipedia link styling */
+.wiki-link a {
+  color: #1d1e4c;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Hover effect for Wikipedia link */
+.wiki-link a:hover {
+  text-decoration: underline;
+}
