@@ -1,0 +1,298 @@
+<link rel="stylesheet" href="/html_tuorial/file_path/css_folder/style.css">
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stride Sneakers</title>
+  <<link rel="stylesheet" href="/html_tuorial/file_path/css_folder/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Stride</div>
+      <ul class="nav-links">
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Solutions</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Log in</a></li>
+        <li><a href="#" class="signup-btn">Sign up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Your Everyday <br><span>Sneakers, Elevated</span></h1>
+      <p>Discover premium-crafted sneakers made for movement, expression, and all-day comfort. From streetwear essentials to limited drops — we’ve got your next pair.</p>
+      <div class="hero-buttons">
+        <button class="btn">Shop Now</button>
+        <button class="btn secondary">Explore Collection</button>
+      </div>
+      <div class="stats">
+        <p>$444M+ <br><small>of revenue worldwide</small></p>
+        <p>170+ <br><small>countries represented</small></p>
+        <p>10% <br><small>conversion improvement</small></p>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="s.jpg" alt="Sneaker Image" />
+    </div>
+  </section>
+
+
+  <footer class="social-icons">
+    <a href="#"><img src="facebook-icon.png" alt="Facebook" /></a>
+    <a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
+    <a href="#"><img src="twitter-icon.png" alt="Twitter" /></a>
+    <a href="#"><img src="linkedin-icon.png" alt="LinkedIn" /></a>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffffff, #ffe6e6);
+  color: #333;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 5%;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ff4d4f;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  font-weight: 500;
+}
+
+
+.nav-links a:hover {
+  color: #ff4d4f;
+}
+
+
+.signup-btn {
+  padding: 0.5rem 1rem;
+  background-color: #ff4d4f;
+  color: white;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+
+.signup-btn:hover {
+  background-color: #e6373a;
+}
+
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 5%;
+  gap: 2rem;
+}
+
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+
+.hero-text span {
+  color: #ff4d4f;
+}
+
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+
+.hero-buttons .btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  margin-right: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+
+.btn {
+  background-color: #ff4d4f;
+  color: white;
+}
+
+
+.btn:hover {
+  background-color: #e6373a;
+}
+
+
+.btn.secondary {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+
+.btn.secondary:hover {
+  background-color: #ddd;
+}
+
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+
+.stats small {
+  display: block;
+  font-weight: normal;
+  color: #777;
+}
+
+
+/* Image */
+.hero-image {
+  flex: 1;
+  text-align: center;
+  min-width: 300px;
+}
+
+
+.hero-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+
+/* Footer */
+footer.social-icons {
+  background-color: #111;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+footer.social-icons img {
+  width: 30px;
+  margin: 0 10px;
+  filter: grayscale(100%) brightness(150%);
+  transition: filter 0.3s;
+}
+
+
+footer.social-icons img:hover {
+  filter: none;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 1rem;
+  }
+
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+  .stats {
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
